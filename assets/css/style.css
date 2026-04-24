@@ -1,0 +1,262 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Hamburguer escondido em desktop */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to left, #535353, #000000);
+  color: #fff;
+  padding: 15px 40px;
+}
+.navbar .logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.navbar .btn,
+.btn {
+  background: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.btn-outline {
+  background: transparent;
+  border: 0.5px solid #ffffff;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  background-image: url('/assets/img/background2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 600px;
+   }
+.hero-text {
+  max-width: 480px;
+  margin: 0 80px;
+color: #ffffff;
+}
+
+.hero-text h1 {
+  font-size: 2.7rem;
+  margin-bottom: 15px;
+}
+.hero-text p {
+  margin-bottom: 20px;
+}
+.hero-buttons .btn {
+  margin-right: 10px;
+}
+.hero-image{
+  margin: 0 80px;
+}
+/* .hero-image img {
+  max-width: 450px;
+  border-radius: 10px;
+} */
+
+/* Services */
+.services {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+  background: #f9f9f9;
+}
+.service {
+  text-align: center;
+  max-width: 250px;
+}
+.service-img,
+.service-img3 {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  margin-bottom: 15px;
+}
+.service-img3 {
+  margin-bottom: 10px;
+}
+.service img {
+  max-width: 200px;
+}
+.service h3 {
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+/* Vantagens */
+.vantagens {
+  padding: 40px;
+}
+.vantagens h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.vantagens ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+.vantagens li {
+  text-align: center;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+/* Cotação */
+.cotacao {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px;
+  background: #f0f0f0;
+}
+.cotacao-text img {
+  max-width: 300px;
+  margin-top: 20px;
+}
+.cotacao-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+}
+.cotacao-form input,
+.cotacao-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.cotacao-form button {
+  background: #007bff;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #000;
+  color: #fff;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-image img {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+  .services {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .cotacao {
+    flex-direction: column;
+    text-align: center;
+  }
+  .cotacao-text img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .hero {
+    padding: 30px 20px;
+  }
+  .hero-text h1 {
+    font-size: 24px;
+  }
+  .hero-text p {
+    font-size: 16px;
+  }
+  .services {
+    padding: 20px;
+  }
+  .vantagens {
+    padding: 20px;
+  }
+  .cotacao {
+    padding: 20px;
+  }
+  .cotacao-form {
+    width: 100%;
+  }
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .hamburger {
+    display: block;
+  }
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #nav-links {
+    display: none;
+    width: 100%;
+    background: #000;
+  }
+  #nav-links ul {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    text-align: center;
+  }
+  #nav-links.show {
+    display: block;
+  }
+}
