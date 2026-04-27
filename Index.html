@@ -87,12 +87,19 @@
   <section class="cotacao">
     <div class="cotacao-text">
       <h2>Faça sua Cotação Agora!</h2>
-      <img src="img/van-road.jpg" alt="Van na estrada">
+      <p>Solicite um orçamento rapido e sem compromisso</p>
+      <!-- <img src="./assets/img/banner.png" alt="Van na estrada"> -->
     </div>
     <form class="cotacao-form">
       <input type="text" placeholder="Nome" required>
       <input type="email" placeholder="E-mail" required>
       <input type="tel" placeholder="Telefone" required>
+      <select required>
+        <option value="Tipo de Serviço" disabled selected>Tipo de Serviço</option>
+        <option value="executivo">Transporte Executivo</option>
+        <option value="turismo">Viagens e Turismo</option>
+        <option value="fretamento">Fretamento de Vans</option>
+      </select>
       <textarea placeholder="Detalhes da Viagem" required></textarea>
       <button type="submit" class="btn">Enviar</button>
     </form>

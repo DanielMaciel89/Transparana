@@ -142,25 +142,40 @@ color: #ffffff;
 .cotacao {
   display: flex;
   justify-content: space-around;
-  align-items: center;
   padding: 40px;
-  background: #f0f0f0;
+  background-image: url('/assets/img/Copilot_20260425_232127.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.cotacao-text img {
+.cotacao-text h2 {
+  color: #ffffff;
+font-size: 2rem;
+}
+.cotacao-text p {
+  color: #ffffff;
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+/* .cotacao-text img {
   max-width: 300px;
   margin-top: 20px;
-}
+} */
 .cotacao-form {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  max-width: 400px;
+  max-width: 420px;
+  background-color: #ffffff;
+  padding: 20px;
 }
 .cotacao-form input,
-.cotacao-form textarea {
+.cotacao-form textarea,
+.cotacao-form select {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  width: 380px;
 }
 .cotacao-form button {
   background: #007bff;
@@ -197,6 +212,7 @@ footer {
   .cotacao {
     flex-direction: column;
     text-align: center;
+
   }
   .cotacao-text img {
     max-width: 100%;
