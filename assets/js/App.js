@@ -6,38 +6,8 @@ function toggleMenu() {
 // Troca de Secao
 const pages = {
   inicio: `
-    <section class="hero">
-      <div class="hero-text">
-        <h1>Transporte Executivo, Viagens & Fretamento de Vans</h1>
-        <p>Conforto, segurança e pontualidade para sua viagem.</p>
-        <div class="hero-buttons">
-          <a href="#" class="btn">Solicitar Orçamento</a>
-          <a href="#" class="btn btn-outline">Saiba Mais</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="services">
-      <div class="service">
-        <img src="./assets/img/executivo.png" alt="">
-        <h3>Transporte Executivo</h3>
-        <p>Transfers e viagens corporativas com qualidade.</p>
-      </div>
-
-      <div class="service">
-        <img src="./assets/img/Turismo e Viagem.png" alt="">
-        <h3>Viagens e Turismo</h3>
-        <p>Passeios e excursões com total conforto.</p>
-      </div>
-
-      <div class="service">
-        <img src="./assets/img/fretamento.png" alt="">
-        <h3>Fretamento de Vans</h3>
-        <p>Serviço para grupos e empresas.</p>
-      </div>
-    </section>
+   
   `,
-
   servicos: `
     <section style="height:100vh; background:black;"></section>
   `,
