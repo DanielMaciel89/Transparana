@@ -12,33 +12,30 @@
 <body>
   <!-- Navbar -->
   <header class="navbar">
-    <div class="logo"><img style="width: 200px;" src="./assets/img/logo.png" alt=""></div>
+    <div class="logo"><img style="width: 200px;" src="./assets/img/logo.png" alt="Transparana"></div>
 
     <!-- Botão hamburguer -->
     <div class="hamburger" onclick="toggleMenu()">
-      
+
       ☰
     </div>
 
     <nav id="nav-links">
       <ul>
         <li><a href="#" data-page="inicio">Início</a></li>
-        <li><a href="#" data-page="servicos">Serviços</a></li>
+        <li><a href="#servicos" data-page="servicos">Serviços</a></li>
         <li><a href="#" data-page="frota">Frota</a></li>
         <li><a href="#" data-page="sobre">Sobre Nós</a></li>
-        <li><a href="#" data-page="contato">Contato</a></li>
+        <li><a href="#contato" data-page="contato">Contato</a></li>
       </ul>
     </nav>
 
     <a href="#" class="btn">Solicitar Orçamento</a>
   </header>
 
-  <!-- Chamar a transicao de secao-->
-  <div id="main-content"></div> 
-
   <!-- Hero -->
   <section class="hero">
-    <div class="hero-text">
+    <div class="hero-text fadeIn">
       <h1>Transporte Executivo, Viagens & Fretamento de Vans</h1>
       <p>Conforto, segurança e pontualidade para sua viagem.</p>
       <div class="hero-buttons">
@@ -52,25 +49,28 @@
   </section>
 
   <!-- Serviços -->
-  <section class="services">
-    <div class="service">
-      <div class="service-img">
-      <img src="./assets/img/executivo.png" alt="Executivo">
+  <section id="servicos">
+    <h2 class="title-services">Serviços Oferecidos</h2>
+    <div class="services">
+      <div class="service">
+        <div class="service-img">
+          <img src="./assets/img/executivo.png" alt="Executivo">
+        </div>
+        <h3>Transporte Executivo</h3>
+        <p>Transfers e viagens corporativas com qualidade.</p>
       </div>
-      <h3>Transporte Executivo</h3>
-      <p>Transfers e viagens corporativas com qualidade.</p>
-    </div>
-    <div class="service">
-      <img src="./assets/img/Turismo e Viagem.png" alt="Turismo">
-      <h3>Viagens e Turismo</h3>
-      <p>Passeios e excursões com total conforto.</p>
-    </div>
-    <div class="service">
-      <div class="service-img3">
-      <img src="./assets/img/fretamento.png" alt="Fretamento">
+      <div class="service">
+        <img src="./assets/img/Turismo e Viagem.png" alt="Turismo">
+        <h3>Viagens e Turismo</h3>
+        <p>Passeios e excursões com total conforto.</p>
       </div>
-      <h3>Fretamento de Vans</h3>
-      <p>Serviço de fretamento para grupos e empresas.</p>
+      <div class="service">
+        <div class="service-img3">
+          <img src="./assets/img/fretamento.png" alt="Fretamento">
+        </div>
+        <h3>Fretamento de Vans</h3>
+        <p>Serviço de fretamento para grupos e empresas.</p>
+      </div>
     </div>
   </section>
 
@@ -78,16 +78,20 @@
   <section class="vantagens">
     <h2>Nossas Vantagens</h2>
     <ul>
-      <li><strong>Motoristas Profissionais</strong> <p>
-
-      </p> Condutores treinados e experientes</li>
-      <li><strong>Veículos de Luxo</strong><p>Frota moderna e confortável</p> </li>
-      <li><strong>Atendimento 24 Horas</strong> <p>Suporte a qualquer hora</p></li>
+      <li><strong>Motoristas Profissionais</strong>
+        <p>Condutores treinados e experientes</p>
+      </li>
+      <li><strong>Veículos de Luxo</strong>
+        <p>Frota moderna e confortável</p>
+      </li>
+      <li><strong>Atendimento 24 Horas</strong>
+        <p>Suporte a qualquer hora</p>
+      </li>
     </ul>
   </section>
 
   <!-- Cotação -->
-  <section class="cotacao">
+  <section class="cotacao" id="contato">
     <div class="cotacao-text">
       <h2>Faça sua Cotação Agora!</h2>
       <p>Solicite um orçamento rapido e sem compromisso</p>

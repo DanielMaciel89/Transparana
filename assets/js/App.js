@@ -3,85 +3,102 @@ function toggleMenu() {
   nav.classList.toggle("show");
 }
 
+const heroBanner = document.querySelector(".hero-text");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Troca de Secao
-const pages = {
-  inicio: `
-   
-  `,
-  servicos: `
-    <section style="height:100vh; background:black;"></section>
-  `,
+// const pages = {
+//   inicio: `
 
-  frota: `
-    <section style="height:100vh; background:black;"></section>
-  `,
+//   `,
+//   servicos: `
+//     <section style="height:100vh; background:black;"></section>
+//   `,
 
-  sobre: `
-    <section style="height:100vh; background:black;"></section>
-  `,
+//   frota: `
+//     <section style="height:100vh; background:black;"></section>
+//   `,
 
-  contato: `
-    <section style="height:100vh; background:black;"></section>
-  `,
+//   sobre: `
+//     <section style="height:100vh; background:black;"></section>
+//   `,
 
-  cotacao: `
-    <section style="height:100vh; background:black;"></section>
-  `
-};
+//   contato: `
+//     <section style="height:100vh; background:black;"></section>
+//   `,
 
-// Funcao Navbar
-function navigate(pageKey) {
-  const main = document.getElementById("main-content");
+//   cotacao: `
+//     <section style="height:100vh; background:black;"></section>
+//   `
+// };
 
-  // Fade out
-  main.classList.add("page-exit");
+// // Funcao Navbar
+// function navigate(pageKey) {
+//   const main = document.getElementById("main-content");
 
-  setTimeout(() => {
-    // Troca de Conteudo
-    main.innerHTML = pages[pageKey] || pages["inicio"];
+//   // Fade out
+//   main.classList.add("page-exit");
 
-    // Scroll 
-    window.scrollTo({ top: 0, behavior: "smooth" });
+//   setTimeout(() => {
+//     // Troca de Conteudo
+//     main.innerHTML = pages[pageKey] || pages["inicio"];
 
-    // Fade in
-    main.classList.remove("page-exit");
-    main.classList.add("page-enter");
+//     // Scroll
+//     window.scrollTo({ top: 0, behavior: "smooth" });
 
-    setTimeout(() => main.classList.remove("page-enter"), 400);
-  }, 200);
+//     // Fade in
+//     main.classList.remove("page-exit");
+//     main.classList.add("page-enter");
 
-  // Funcao Link
-  document.querySelectorAll("#nav-links a").forEach(link => {
-    link.classList.remove("active");
-    if (link.dataset.page === pageKey) {
-      link.classList.add("active");
-    }
-  });
+//     setTimeout(() => main.classList.remove("page-enter"), 400);
+//   }, 200);
 
-  // Fechar menu
-  document.getElementById("nav-links").classList.remove("show");
-}
+//   // Funcao Link
+//   document.querySelectorAll("#nav-links a").forEach(link => {
+//     link.classList.remove("active");
+//     if (link.dataset.page === pageKey) {
+//       link.classList.add("active");
+//     }
+//   });
 
-// INIT
-document.addEventListener("DOMContentLoaded", () => {
+//   // Fechar menu
+//   document.getElementById("nav-links").classList.remove("show");
+// }
 
-  // Click na Navbar
-  document.querySelectorAll("#nav-links a[data-page]").forEach(link => {
-    link.addEventListener("click", (e) => {
-      e.preventDefault();
-      navigate(link.dataset.page);
-    });
-  });
+// // INIT
+// document.addEventListener("DOMContentLoaded", () => {
 
-  // Botao
-  const ctaBtn = document.querySelector(".navbar > .btn");
-  if (ctaBtn) {
-    ctaBtn.addEventListener("click", (e) => {
-      e.preventDefault();
-      navigate("cotacao");
-    });
-  }
+//   // Click na Navbar
+//   document.querySelectorAll("#nav-links a[data-page]").forEach(link => {
+//     link.addEventListener("click", (e) => {
+//       e.preventDefault();
+//       navigate(link.dataset.page);
+//     });
+//   });
 
-  // Inicio
-  navigate("inicio");
-});
+//   // Botao
+//   const ctaBtn = document.querySelector(".navbar > .btn");
+//   if (ctaBtn) {
+//     ctaBtn.addEventListener("click", (e) => {
+//       e.preventDefault();
+//       navigate("cotacao");
+//     });
+//   }
+
+//   // Inicio
+//   navigate("inicio");
+// });
